@@ -10,7 +10,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0%;
-    grid-template: 15% 80% 5% / 20% 60% 20%;
+    grid-template: 20% 75% 5% / 20% 60% 20%;
     background-color: lightsteelblue;
     font-family: 'Roboto', sans-serif;
 
@@ -25,10 +25,10 @@ body {
     grid-row-end: 4;
     background-color: #0284c7;
     color: white;
-    grid-template: 10% 45% 45% / 100%;
-    gap:5%
+    grid-template: 5% auto auto/ 100%;
+    align-items: center;
+    padding-left: 20%;
 }
-
 
 .Hero {
     display: grid;
@@ -36,7 +36,9 @@ body {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    
+    padding-top: 8%;
+    justify-self: start;
+
 }
 
 .firstOptions {
@@ -45,7 +47,8 @@ body {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-
+    gap: 20px;
+    justify-self: start;
 }
 
 .secondOptions {
@@ -54,67 +57,73 @@ body {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-
+    gap: 20px;
+    justify-self: start;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header {
-    padding: 2%;
+    padding: 1%;
     display: grid;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
     background-color: white;
+    border: solid blueviolet;
+
 }
 
+
+.firstLineHeader {
+    display: flex;
+    flex-direction: row;
+    border: solid black;
+    margin-right: 1.25%;
+    margin-left: 0.25%;
+}
+
+
+
+
 .search {
-    width: 60%;
+    width: 65%;
     display: flex;
     gap: 1%;
+    align-items:center;
+    border: solid gold;
+    
 }
 
 input {
-    min-width: 100%;
+    min-width: 90%;
     max-width: 476.7px;
     background-color: lightgray;
     border-radius: 6px;
     border-width: 0px;
     padding-left: 2%;
+    height: 30px;
     font-style: italic;
 }
 
 .searchButton {
     position: relative;
-    width: 24PX;
-    height: 24PX;
+    width: 24px;
+    height: 24px;
     background-color: white;
     color: gray;
 }
+
+.topRightCorner {
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+    border: solid orangered;
+    align-items:center;
+    justify-content: right;
+    width: 35%;
+}
+
 
 .middleSection {
     padding: 2%;
